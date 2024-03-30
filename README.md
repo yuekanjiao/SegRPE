@@ -2,13 +2,13 @@
 
 Plugin SegRPE does cell and nucleus segmentations of RPE imaged by confocal microscopy. 
 
-![](figures/PolySeg.png)
-
 For cell segmentation of RPE, plugin SegRPE assumes the RPE cells have a polygonal shape. The vertices of the polygons are manually marked and the plugin connects the vertices automatically into polygons. 
 
-![](figures/SegRPE.png)
+![](figures/PolySeg.png)
 
 Plugin SegRPE runs on the front image loaded onto ImageJ.  Start the plugin and follow the steps described below:
+
+![](figures/SegRPE.png)
 
 **1.** Use ImageJ Multi-point tool to mark all the vertices of the RPE cells (a). It does not need to be done in a certain order. If a side of a RPE cell is not a straight line, add one or more vertices on it. Click button “Poly Seg”, the plugin will connect the vertices marked with straight lines to form polygons (b).
 
