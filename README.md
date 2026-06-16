@@ -1,4 +1,4 @@
-# ImageJ Pluign SegRPE
+# ImageJ Plugin SegRPE
 
 Plugin SegRPE does cell and nucleus segmentations of RPE imaged by confocal microscopy. 
 
@@ -10,9 +10,9 @@ Plugin SegRPE runs on the front image loaded onto ImageJ.  Start the plugin and 
 
 ![](figures/SegRPE.png)
 
-**1.** Use ImageJ Multi-point tool to mark all the vertices of the RPE cells (a). It does not need to be done in a certain order. If a side of a RPE cell is not a straight line, add one or more vertices on it. Click button “Poly Seg”, the plugin will connect the vertices marked with straight lines to form polygons (b).
+**1.** Use ImageJ Multi-point tool to mark all the vertices of the RPE cells (a), and this does not need to follow a vertice pattern. If a side of a RPE cell is not a straight line, add one or more vertices on it. Click button “Poly Seg”, the plugin will connect the vertices marked with straight lines to form polygons (b).
 
-**2.** The plugin makes a few wrong lines (arrows in (b)). Select Black/white for ImageJ Color picker tool, use ImageJ Paintbrush tool to break the lines (arrows in (c)), and press button “Update Poly”, the wrong lines are removed (d). If there is a wrong vertex marked, break all the lines connected to it. Button “Check Poly” overlays the polygons onto the image to check how well the cell segmentation of RPE is.    
+**2.** The plugin makes a few wrong connections (arrows in (b)). Select Black/white for ImageJ Color picker tool, use ImageJ Paintbrush tool to break the lines (arrows in (c)), and press button “Update Poly”, the wrong connections are removed (d). If there is a wrong vertex marked, break all the lines connected to it. Button “Check Poly” overlays the polygons onto the image to check how well the cell segmentation of RPE is.    
 
 Nucleus segmentation of RPE by plugin SegRPE is completely automatic. The nucleus image (e) is contrast adjusted, median filtered and thresholded (f), and holes filled (g). The residues from the background are removed by size clustering (h); the larger size cluster is nuclei, while the smaller size cluster is from the background.
 
